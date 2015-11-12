@@ -55,12 +55,28 @@ header {
 
       a {
         text-decoration: none;
-        color: @color1;        
-      }
-      
-      i {
-        color: @color1;
-      }
+        color: @color1;    
+        
+        &:hover {
+          text-decoration: none;
+//          font-weight: bold;
+          color: @color1;
+          background-color: @color3;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          height: 20px;
+          padding: 12px;
+        }
+        
+        i {
+          color: @color1;
+          
+          &:hover {
+            color: @color3;
+          }
+          
+        }
+      }     
     }
   }
 }
@@ -99,7 +115,21 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-}
+  
+  ul {
+    li {
+      text-decoration: none;
+      a {
+        color: @color1;
+        font-family: @font1;
+        
+        &:hover {
+          color: @color3;
+        }
+      }
+    }
+  }
+} // end footer
 
 
 // LOGIN STYLES
@@ -158,21 +188,63 @@ footer {
 
 .wrapper-posts {
   width: 100%;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  
+  .l-container {
+    width: 81%;
+    padding-right: 1%;
+    float: left;
+    
+    .post {
+      width: 100%;
+      clear: both;
+      
+      .image {
+        float: left;
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+      
+      .text {
+        float: left; 
+        background-color: @color1;
+        color: @color2;
+        font-size: 1.1em;
+        padding: 2%;
+      }            
+    } // end posts   
+    
+  }  // l-container 
   
   #side-menu {
-    width: 20%;
-    float: right;
+    width: 17%;
+    height: 550px;
+    float: left;  
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: @color2;
     color: @color1;
+    padding: 1.5%;
+    
+    h3 {
+      text-align: center;
+    }
     
     img {
-      width: 200px;
+      width: 150px;
       height: auto;
       border-radius: 100px;
+      display: block;
+      margin: 10px auto;
     }
-  }
-  
-}
+    
+  }  // end #side-menu
+} // end wrapper-posts
 
 
 
