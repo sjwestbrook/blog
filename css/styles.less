@@ -14,11 +14,12 @@
   font-family: @font1;
 }
 
+
 // GLOBAL STYLES
+
 html {
   margin: 0;
   padding: 0;
-//  width: 100%;
 }
 
 body {
@@ -27,15 +28,69 @@ body {
   background-color: @color1;
   position: relative;
   width: 100%;
-//  height: 600px;
   height: 100%;
+  font-family: @font1;
 }
 
 header {
   .header-footer;
-  position: fixed;
-  top: 15px;
-  left: 0;
+  position: relative;
+  height: 20px;
+  background-image: url(/images/strip.png);
+  background-size: cover;
+  
+  ul {  
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: @color2;
+      
+    li {
+      display: inline-block;
+      padding: 10px 20px;
+      float: right;
+
+      a {
+        text-decoration: none;
+        color: @color1;        
+      }
+      
+      i {
+        color: @color1;
+      }
+    }
+  }
+}
+
+input {
+  width: 250px;
+  height: 25px;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+  font-family: @font1; 
+  padding-left: 2%;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  font-family: @font1; 
+}
+
+input[type="password"]::-webkit-input-placeholder {
+  font-family: @font1;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  border: 0;
+  background-color: @color3;
+  color: @color1;
+  font-family: @font1;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 footer {
@@ -61,44 +116,67 @@ footer {
   }
 
   .login {
-    width: 275px;
-    height: 160px;
+    width: 280px;
+    height: 200px;
     float: left;
     padding-top: 40px;
-    padding-left: 25px;
-    background-color: lightgrey;
+    padding-left: 20px;
+    background-color: #B70E58;
     
-    input {
-      width: 250px;
-      height: 25px;
-      border: 1px solid lightgrey;
-      margin-bottom: 10px;
-      font-family: @font1; 
-      padding-left: 2%;
-    }
-    
-    input[type="text"]::-webkit-input-placeholder {
-      font-family: @font1; 
-    }
-
-    input[type="password"]::-webkit-input-placeholder {
-      font-family: @font1;
-    }
-    
-    button {
-      width: 50px;
-      height: 30px;
-      background-color: @color3;
+    a {
+      text-decoration: none;
       color: @color1;
-      border: 0;
+      font-family: @font1;
+      font-weight: bold;
+      letter-spacing: 0.1em;
     }
   }
 }
 
 
-
 // ADMIN STYLES
 
+.wrapper-admin {
+  max-width: 650px;
+  margin: 0 auto;  
+  padding-top: 3%;
+  
+  .new-post {
+    #title {
+      width: 600px;
+    }
+
+    #content {
+      width: 600px;
+      height: 400px;
+    }
+  }
+}
 
 
 // BLOG PAGE STYLES
+
+.wrapper-posts {
+  width: 100%;
+  
+  #side-menu {
+    width: 20%;
+    float: right;
+    background-color: @color2;
+    color: @color1;
+    
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 100px;
+    }
+  }
+  
+}
+
+
+
+
+
+
+//
