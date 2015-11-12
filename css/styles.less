@@ -16,6 +16,10 @@
 
 
 // GLOBAL STYLES
+//
+//* {
+//  outline: 1px dotted red;
+//}
 
 html {
   margin: 0;
@@ -82,7 +86,7 @@ header {
 }
 
 input {
-  width: 250px;
+  width: 240px;
   height: 25px;
   border: 1px solid lightgrey;
   margin-bottom: 10px;
@@ -193,42 +197,47 @@ footer {
   right: 0;
   
   .l-container {
-    width: 81%;
-    padding-right: 1%;
+    width: 55%;
     float: left;
+    margin-left: 15%;
     
     .post {
       width: 100%;
+      height: 266px;
       clear: both;
+      margin-left: 20px;
+      background-color: @color1;      
       
       .image {
         float: left;
+        padding: 0 2% 0 0;
+        
         img {
-          width: 50%;
+          max-width: 400px;
           height: auto;
         }
       }
       
       .text {
+        width: 40%;
         float: left; 
-        background-color: @color1;
         color: @color2;
         font-size: 1.1em;
-        padding: 2%;
+        padding: 4% 0 4% 4%;
       }            
     } // end posts   
     
   }  // l-container 
   
   #side-menu {
-    width: 17%;
-    height: 550px;
+    width: 20%;
+    height: 100%;
     float: left;  
     position: absolute;
     top: 0;
     right: 0;
-    background-color: @color2;
-    color: @color1;
+    background-color: lightgrey;
+    color: @color2;
     padding: 1.5%;
     
     h3 {
