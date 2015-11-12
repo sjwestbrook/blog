@@ -124,7 +124,7 @@ footer {
     li {
       text-decoration: none;
       a {
-        color: @color1;
+        color: @color3;
         font-family: @font1;
         
         &:hover {
@@ -190,22 +190,28 @@ footer {
 
 // BLOG PAGE STYLES
 
+.wrapper-allposts {
+  background-color: lightgrey;
+}
+
 .wrapper-posts {
   width: 100%;
   position: absolute;
   top: 60px;
   right: 0;
+  background-color: lightgrey;
   
   .l-container {
-    width: 55%;
+    width: 75%;
     float: left;
-    margin-left: 15%;
+    margin-left: 1.5%;
     
     .post {
       width: 100%;
       height: 266px;
       clear: both;
       margin-left: 20px;
+      padding: 1.5%;
       background-color: @color1;      
       
       .image {
@@ -213,16 +219,17 @@ footer {
         padding: 0 2% 0 0;
         
         img {
-          max-width: 400px;
+          max-width: 375px;
           height: auto;
         }
       }
       
       .text {
-        width: 40%;
+        width: 43%;
         float: left; 
         color: @color2;
         font-size: 1.1em;
+        line-height: 1.8em;
         padding: 4% 0 4% 4%;
       }            
     } // end posts   
@@ -230,7 +237,7 @@ footer {
   }  // l-container 
   
   #side-menu {
-    width: 20%;
+    width: 23%;
     height: 100%;
     float: left;  
     position: absolute;
@@ -238,7 +245,8 @@ footer {
     right: 0;
     background-color: lightgrey;
     color: @color2;
-    padding: 1.5%;
+    padding: 2%;
+    line-height: 1.8em;
     
     h3 {
       text-align: center;
