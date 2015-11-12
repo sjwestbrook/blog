@@ -16,7 +16,7 @@
 
 
 // GLOBAL STYLES
-//
+
 //* {
 //  outline: 1px dotted red;
 //}
@@ -54,32 +54,39 @@ header {
       
     li {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 10px 15px;
       float: right;
-
+      position: relative;
+      list-style: none;
+      width: 100px;
+            
       a {
         text-decoration: none;
-        color: @color1;    
+        color: @color1; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 10px;
         
         &:hover {
           text-decoration: none;
-//          font-weight: bold;
-          color: @color1;
           background-color: @color3;
+          color: @color1;
           font-weight: bold;
+          font-size: 1em;
           letter-spacing: 0.1em;
-          height: 20px;
-          padding: 12px;
+          height: 40px;
+          padding: 10px;
         }
         
-        i {
-          color: @color1;
-          
-          &:hover {
-            color: @color3;
-          }
-          
-        }
+//        i {
+//          color: @color1;
+//          width: 40px;
+//          height: 40px;
+//          position: absolute;
+//          top: 0;
+//          left: 0;
+//        }
       }     
     }
   }
@@ -121,16 +128,13 @@ footer {
   left: 0;
   
   ul {
+    margin: 0 auto;
+    
     li {
-      text-decoration: none;
-      a {
-        color: @color3;
-        font-family: @font1;
-        
-        &:hover {
-          color: @color3;
-        }
-      }
+      list-style: none;
+      text-align: center;
+      height: 40px;
+      padding: 10px;
     }
   }
 } // end footer
@@ -189,10 +193,6 @@ footer {
 
 
 // BLOG PAGE STYLES
-
-.wrapper-allposts {
-  background-color: lightgrey;
-}
 
 .wrapper-posts {
   width: 100%;
@@ -262,10 +262,3 @@ footer {
     
   }  // end #side-menu
 } // end wrapper-posts
-
-
-
-
-
-
-//
